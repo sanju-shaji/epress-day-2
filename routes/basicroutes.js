@@ -9,11 +9,13 @@ var arr_obj=[{name:'sanju',age:22,loc:"qln"},{name:'arr',age:22,loc:"tvm"},
     {name:'aju',age:22,loc:"knr"}];
 
 router.get('/students',(req,res)=>{
+   // res.send(arr_obj)
+    
     res.render("students",{
         title:'student',
         arr_obj
 
-    })
+})
 })
 
 router.post('/add',(req,res)=>{
